@@ -1,0 +1,39 @@
+@import 'variables';
+@import 'mixins';
+
+html,
+body {
+  font-family: $primary-font;
+}
+
+// Backgrounds
+.blue-bg {
+  background: $blue-color;
+}
+
+.white-bg {
+  background: $white-color;
+}
+
+// Customizes --------------------
+
+// Button
+.ant-btn-primary {
+  background-color: #1677ff;
+}
+
+.ant-btn-icon-only {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Container --------------------
+.page-management-container {
+  background: $white-color;
+  border-radius: 12px;
+
+  .heading {
+    border-bottom: 1px solid lightgray;
+  }
+}
