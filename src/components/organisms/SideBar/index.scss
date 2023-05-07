@@ -1,0 +1,24 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.sidebar {
+  padding: 20px 15px;
+
+  ul {
+    p {
+      width: 150px;
+      padding: 5px;
+      margin: 0 0 5px;
+    }
+    a {
+      display: flex;
+      flex-direction: row;
+
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+  @include media-xs() {
+    padding: 10px 15px;
+  }
+}

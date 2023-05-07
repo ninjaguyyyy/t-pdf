@@ -1,19 +1,26 @@
-import BrandLogo from 'components/atoms/BrandLogo';
-import SignInButton from 'components/atoms/SignInButton';
-import SearchArea from 'components/molecules/SearchArea';
-import SocialIconButtons from 'components/molecules/SocialIconButtons';
+import { BellOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
+import IconButton from 'components/atoms/IconButton';
+import AdminSettingButton from 'components/molecules/AdminSettingButton';
 import './index.scss';
 
-const Header = () => (
-  <header>
-    <div className="header white-bg flex justify-between items-center xs:mt-0">
-      <BrandLogo className="grow" />
-      <SearchArea className="mr-4 xs:mr-0" />
-      <SignInButton className="mr-8 xs:hidden" />
-      <SocialIconButtons className="xs:hidden" />
-    </div>
-  </header>
-);
+export default function Header() {
+  return (
+    <div className="flex header items-center justify-between">
+      {/* Brand Logo */}
+      <Link to={'/'}>
+        <div className="flex items-center cursor-pointer">
+          <img className="h-6 w-6" src="/vite.svg" alt="Logo" />
+          <p className="px-3 font-bold">Q-BLOG ADMIN</p>
+        </div>
+      </Link>
 
-export default Header;
+      {/* Header Actions */}
+      <div className="flex items-center gap-6 space-x-1">
+        <IconButton icon={<BellOutlined />} />
+        <AdminSettingButton />
+      </div>
+    </div>
+  );
+}

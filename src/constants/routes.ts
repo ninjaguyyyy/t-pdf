@@ -13,12 +13,11 @@ export const routes: RouteConfig[] = [
   },
   {
     path: '/blogs',
-    component: loadable(() => import('components/pages/Blogs'))
+    component: loadable(() => import('components/pages/PostManagement'))
   },
   {
-    path: '/profile',
-    auth: true,
-    component: loadable(() => import('components/pages/user/Profile'))
+    path: '/dashboard',
+    component: loadable(() => import('components/pages/DashBoard'))
   }
 ];
 
