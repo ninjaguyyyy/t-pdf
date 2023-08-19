@@ -8,10 +8,6 @@ export const routes: RouteConfig[] = [
     component: loadable(() => import('components/pages/Home'))
   },
   {
-    path: '/sign-in',
-    component: loadable(() => import('components/pages/SignIn'))
-  },
-  {
     path: '/blogs',
     component: loadable(() => import('components/pages/PostManagement'))
   },

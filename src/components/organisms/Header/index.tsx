@@ -12,7 +12,7 @@ export default function Header() {
       <Link to={'/'}>
         <div className="flex items-center cursor-pointer">
           <img className="h-6 w-6" src="/vite.svg" alt="Logo" />
-          <p className="px-3 font-bold">Q-BLOG ADMIN</p>
+          <p className="px-3 font-bold">T PDF</p>
         </div>
       </Link>
 
